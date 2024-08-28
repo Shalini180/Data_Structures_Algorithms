@@ -17,10 +17,6 @@ class Solution {
     public TreeNode searchHelper(TreeNode root, int val){
         if(root == null) return null;
         if(root.val == val) return root;
-        TreeNode left = searchHelper(root.left, val);
-        if(left != null) return left;
-        TreeNode right = searchHelper(root.right, val);
-        if(right != null) return right;
         if(root.val < val) return searchHelper(root.right, val);
         return searchHelper(root.left, val);
     }
