@@ -62,6 +62,7 @@ class Solution {
     }
 
     // Main function to choose between top-down and bottom-up approaches
+    //TC : o(m*n*k)
     public int findMaxForm(String[] strs, int m, int n) {
         // Uncomment the following for top-down approach:
         /*
